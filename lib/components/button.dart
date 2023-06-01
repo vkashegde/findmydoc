@@ -24,7 +24,9 @@ class Button extends StatelessWidget {
         style: ElevatedButton.styleFrom(
             backgroundColor: Config.primaryColor,
             foregroundColor: Colors.white),
-        onPressed: () {},
+        onPressed: () {
+          onPressed();
+        },
         child: Text(
           title,
           style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
